@@ -13,8 +13,9 @@ return new class extends Migration {
         Schema::create('tarefas', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->text('descricao')->nullabel();
-            $table->enum('status', ['concluida', 'em adamento', 'incompleta'])->default(1);
+            $table->text('descricao')->nullable();
+            $table->enum('status', ['concluida', 'em andamento', 'incompleta'])->default('incompleta');
+            $table->date('data_finalizacao')->nullable();
             $table->timestamps();
         });
     }
