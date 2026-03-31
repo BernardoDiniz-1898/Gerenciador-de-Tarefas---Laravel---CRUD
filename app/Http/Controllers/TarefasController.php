@@ -48,7 +48,7 @@ class TarefasController extends Controller
         ]);
 
         $tarefa->update($validated);
-        return redirect->route('tarefas.index');
+        return redirect()->route('tarefas.index');
     }
 
     public function destroy(Tarefa $tarefa)
