@@ -18,7 +18,8 @@ class Tarefa extends Model
         'nome',
         'descricao',
         'status',
-        'data_finalizacao'
+        'data_finalizacao',
+        'user_id'
     ];
 
     /**
